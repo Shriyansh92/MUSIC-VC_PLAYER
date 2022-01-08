@@ -1,5 +1,5 @@
 {
-    "name": "Music_Player_BOSS",
+    "name": "MUSIC-VC PLAYER🤑",
     "description": "A Telegram Music Bot written in Python using Pyrogram and Py-Tgcalls",
     "repository": "https://github.com/Shriyansh92/MUSIC-VC_PLAYER",
     "logo": "https://telegra.ph/file/bc32f7b80ee13ddc62035.jpg",
@@ -34,7 +34,7 @@
       },
       "PREFIX": {
         "description": "Bot commad prefix or handler (separate multiple prefix with space)",
-        "value": "!",
+        "value": "/",
         "required": false
       },
       "LANGUAGE": {
