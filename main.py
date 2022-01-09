@@ -49,6 +49,20 @@ from pytgcalls.types.stream import StreamAudioEnded, StreamVideoEnded
 from pytgcalls.exceptions import NoActiveGroupCall, GroupCallNotFound
 from core.decorators import register, language, handle_error, only_admins
 
+REPO = """
+ **Music Player**
+- Repo: [GitHub](https://github.com/Shriyansh92/VC-MUSICPLAYER)
+- Owner: @Shriyansh92
+"""
+
+
+@app.on_message(
+    filters.command("repo", config.PREFIXES) & filters.group & ~filters.edited
+)
+@handle_error
+async def repo(_, message: Message):
+    await message.reply_text(REPO)
+
 @app.on_message(
     filters.command("ping", config.PREFIXES) & filters.group & ~filters.edited
 )
